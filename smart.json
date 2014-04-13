@@ -1,0 +1,9 @@
+{
+  "name": "live-maps",
+  "description": "Creates live marker sets for Google Maps based on Meteor cursors.",
+  "homepage": "https://githube.com/singlow/meteor-live-maps",
+  "author": "Jacob Williams <jacob@iakob.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/singlow/meteor-live-maps.git",
+  "packages": {}
+}
