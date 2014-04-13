@@ -3,11 +3,14 @@ Package.describe({
 });
 
 Package.on_use(function(api) {
-  api.use('coffeescript', 'client');
+  api.use("coffeescript", "client");
 
-  if (api.export)
-    api.export("LiveMaps", 'client')
+  if (api.export) {
+    api.export("LiveMaps", "client");
+    console.log("LiveMaps exported");
+  }
 
-  api.add_files('live-maps-client.coffee', 'client');
+  api.add_files("live-maps-client.coffee", "client");
+  console.log("LiveMaps files have been included");
 });
 
