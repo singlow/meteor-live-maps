@@ -6,8 +6,8 @@ a google map canvas.
 
 ```js
 LiveMaps.addMarkersToMap(
-  map: googleMapObject,
-  cursors: [ {
+  googleMapObject,
+  [ {
     cursor: Places.find(),
     transform: function(document) {
       return {
@@ -18,6 +18,7 @@ LiveMaps.addMarkersToMap(
       };
     }
   } ]
+);
 ```
 
 The markers options should be an object or array of objects specifying
