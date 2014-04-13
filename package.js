@@ -7,10 +7,8 @@ Package.on_use(function(api) {
 
   if (api.export) {
     api.export("LiveMaps", "client");
-    console.log("LiveMaps exported");
   }
 
   api.add_files("live-maps-client.coffee", "client");
-  console.log("LiveMaps files have been included");
 });
 
