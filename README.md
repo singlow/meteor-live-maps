@@ -11,6 +11,7 @@ liveMarkers = LiveMaps.addMarkersToMap(
     cursor: Places.find(),
     transform: function(document) {
       return {
+        map: googleMapObject,
         title: document.firstName + ' ' + document.lastName,
         position: new google.maps.LatLng(document.address.location[1], document.address.location[0]),
         animation: google.maps.Animation.BOUNCE,
