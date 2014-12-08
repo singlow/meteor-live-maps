@@ -9,6 +9,9 @@ liveMarkers = LiveMaps.addMarkersToMap(
   googleMapObject,
   [ {
     cursor: Places.find(),
+    onClick: function() {
+      console.log('Document id = ' + this.id);
+    },
     transform: function(document) {
       return {
         title: document.firstName + ' ' + document.lastName,
