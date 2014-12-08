@@ -17,12 +17,16 @@ liveMarkers = (map, cursor)->
       icon: doc.icon or '//maps.google.com/mapfiles/ms/icons/green-dot.png'
   else
     transform = cursor.transform
+    onClick = cursor.onClick
     cursor = cursor.cursor
 
   addMarker = (doc)->
     options = transform(doc)
     options.map = map unless options.map
-    markers[doc._id] = new google.maps.Marker options
+    marker = new google.maps.Marker options
+    marker.id = doc._id
+    google.maps.event.addListener marker, 'click', onClick
+    markers[doc._id] = marker
 
   removeMarker = (doc)->
     markers[doc._id].setMap(null)
