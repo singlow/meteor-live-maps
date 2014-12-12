@@ -1,5 +1,7 @@
 Package.describe({
-  summary: "Live marker sets for Google Maps based on Meteor cursors."
+  summary: "Live marker sets for Google Maps based on Meteor cursors.",
+  version: "0.1.0",
+  git: "https://github.com/singlow/meteor-live-maps.git"
 });
 
 Package.on_use(function(api) {
