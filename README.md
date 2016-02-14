@@ -8,6 +8,9 @@ meteor add singlow:live-maps
 This package allows you to turn any cursor into a set of live markers on
 a google map canvas.
 
+
+### Example
+
 ```js
 liveMarkers = LiveMaps.addMarkersToMap(
   googleMapObject,
