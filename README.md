@@ -1,6 +1,10 @@
 Live Google Maps for Meteor
 ===========================
 
+```
+meteor add singlow:live-maps
+```
+
 This package allows you to turn any cursor into a set of live markers on
 a google map canvas.
 
@@ -50,7 +54,7 @@ file scope to make sure it is available in both the rendered and destroyed
 functions.
 
 This package expects google maps to be loaded when it is used, but it
-does not require any particular smart package to provide it. It may be
+does not require any particular package to provide it. It may be
 provided by another package or included directly in your app as long
 as the expected google namespace is available globally. There is an
-atmosphere package called googlemaps that will include the api for you.
+atmosphere package called mrt:googlemaps that will include the api for you.
